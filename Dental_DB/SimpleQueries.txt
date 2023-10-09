@@ -1,0 +1,92 @@
+﻿/**************Query A***************/
+SELECT PERSON.FirstName, PERSON.LastName, MEDICATIONS.Med_Name, MEDICATIONS.Prescribed_Amount
+FROM PERSON, PATIENT_MEDICATIONS, MEDICATIONS
+WHERE PERSON.PersonID = PATIENT_MEDICATIONS.PersonID
+                and PATIENT_MEDICATIONS.Med_Num = MEDICATIONS.Med_Num
+order by PERSON.LastName ASC;
+
+
+/**************Query B***************/
+SELECT PERSON.firstname, PERSON.lastname, PERSON.phone_number, PERSON.ssn, PERSON.ethnicity, PERSON.gender, PERSON.date_of_birth, PERSON.insurance_name,
+ADDRESS.street, ADDRESS.City, ADDRESS.Zip, EMERGENCY_CONTACT.firstname, EMERGENCY_CONTACT.lastname, EMERGENCY_CONTACT.contact_num 
+FROM PATIENT, PERSON, INSURANCE_POLICY, PERSON_ADDRESS, ADDRESS, EMERGENCY_CONTACT
+WHERE PERSON.PersonID = PATIENT.PersonID
+    AND PERSON.PersonID = PERSON_ADDRESS.PersonID
+        AND PERSON_ADDRESS.AddID = ADDRESS.AddressID 
+    AND PERSON.ContactID = EMERGENCY_CONTACT.ContactID 
+    AND PERSON.PolicyID = INSURANCE_POLICY.PolicyID
+    AND INSURANCE_POLICY.Insurance_Name = 'Delta Dental';
+
+
+/**************Query C***************/
+SELECT PROCEDURE.Procedure_Name, PROCEDURE.Pro_Date
+FROM PERSON, MEDICAL, INVOICE, PROCEDURE, PROCEDURE_COST
+WHERE PERSON.PersonID = MEDICAL.PersonID AND 
+PERSON.LastName = 'Smilow' AND
+MEDICAL.PersonID = INVOICE.PersonID AND
+PROCEDURE_COST.InvoiceID = INVOICE.InvoiceID AND
+INVOICE.Date = PROCEDURE.Pro_Date;
+
+
+
+
+/**************Query D***************/
+/*Current Date was 04/05/2023 */
+SELECT PERSON.FirstName, PERSON.LastName, PERSON.Phone_Number, INVOICE.Date, INVOICE.Balance
+FROM PERSON, PATIENT, INVOICE
+WHERE PERSON.PersonID = PATIENT.PersonID
+                and PERSON.PersonID = INVOICE.PersonID
+        and INVOICE.Date < '2023-03-06'
+        AND INVOICE.Balance > 10;
+
+
+/**************Query E**************/
+SELECt PERSON.FirstName,PERSON.LastName, SUM(PAYMENT.Amount)
+FROM PERSON, PATIENT, PAYMENT
+WHERE PERSON.PersonID = PATIENT.PersonID
+                and PAYMENT.PersonID = PATIENT.PersonID
+group by PERSON.PersonID
+ORDER by SUM(PAYMENT.Amount) DESC;
+
+
+/**************Query F**************/
+SELECT PERSON.firstname, PERSON.lastname, COUNT(INVOICE.PersonID)
+FROM PERSON, INVOICE
+WHERE PERSON.PersonID = INVOICE.PersonID
+GROUP BY PERSON.PersonID
+HAVING COUNT(INVOICE.PersonID) < 5;
+
+
+/**************Query G************/
+SELECt p as [Procedure], m as [MaxCost], Count(p)
+FROM (SELECT PROCEDURE.Procedure_Name as p, MAX(PROCEDURE.Cost) as m 
+      from PROCEDURE, PROCEDURE_COST
+      where PROCEDURE.ProcedureID = PROCEDURE_COST.ProcedureID);
+
+
+/**************Query H************/
+Select Cash, CashTotal, Credit, CreditTotal, Check1, Check1Total
+from (SELECT Count(CASH.PaymentID) as Cash, SUM(PAYMENT.Amount) as CashTotal
+from PAYMENT, CASH
+WHERE PAYMENT.PaymentID = CASH.PaymentID),
+
+
+(SELECT Count(CREDIT.PaymentID) as Credit, SUM(PAYMENT.Amount) as CreditTotal
+from PAYMENT, CREDIT
+WHERE PAYMENT.PaymentID = CREDIT.PaymentID),
+ 
+(SELECT Count(CHECK1.PaymentID) As Check1, SUM(PAYMENT.Amount) as Check1Total
+from PAYMENT, CHECK1
+WHERE PAYMENT.PaymentID = CHECK1.PaymentID);
+
+
+
+
+
+
+/**************Query I************/
+SELECT name, MAX(c)
+from (SELECT INSURANCE_POLICY.Policy_Type as name, count(PERSON.PersonID) as c
+      FROM PERSON, INSURANCE_POLICY
+      WHERE PERSON.PolicyID = INSURANCE_POLICY.PolicyID
+      GROUP by INSURANCE_POLICY.PolicyID);

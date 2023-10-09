@@ -1,0 +1,829 @@
+﻿/************************ Insertions for PERSON ******************************/
+INSERT INTO PERSON VALUES (01, 111223333, 987656621, 'Caucasian', 'Bob','Ross', 'Male', 01021960, 'State Farm', '01', '01');
+INSERT INTO PERSON VALUES (02, 2223334444, 987654321, 'African American', 'Michelle', 'Obama', 'Female', 19640117, 'Blue Cross Blue Shield', '02', '02');
+INSERT INTO PERSON VALUES (03, 3334445555, 456789012, 'Hispanic', 'Sofia', 'Vergara', 'Female', 19720710, 'UnitedHealthcare', '03', '03');
+INSERT INTO PERSON VALUES (04, 4445556666, 234567890, 'Caucasian', 'Brad', 'Pitt', 'Male', 19631218, 'Humana', '04', '04');
+INSERT INTO PERSON VALUES (05, 5556667777, 345678901, 'Native American', 'Pocahontas', 'Smith', 'Female', 15960602, 'Cigna', '05', '05');
+INSERT INTO PERSON VALUES (06, 6667778888, 567890123, 'Pacific Islander', 'Moana', 'Waialiki', 'Female', 19960314, 'Kaiser Permanente', '06', '06');
+INSERT INTO PERSON VALUES (07, 7778889999, 789012345, 'Middle Eastern', 'Rami', 'Malek', 'Male', 19810512, 'Molina Healthcare', '07', '07');
+INSERT INTO PERSON VALUES (08, 8889990000, 890123456, 'Mixed Race', 'Kamala', 'Harris', 'Female', 19641020, 'AARP', '08', '08');
+INSERT INTO PERSON VALUES (09, 9990001111, 901234567, 'Latino', 'Diego', 'Luna', 'Male', 19791229, 'Aetna', '09', '09');
+INSERT INTO PERSON VALUES (10, 1112223333, 890123456, 'Asian', 'Lucy', 'Liu', 'Female', 19681202, 'Blue Cross Blue Shield', '10', '10');
+INSERT INTO PERSON VALUES (11, 1112345333, 987624621, 'Caucasian', 'Linda','Smilow', 'Female', 01021960, 'State Farm', '11', '11');
+INSERT INTO PERSON VALUES (12, 2223456544, 123456789, 'African American', 'Barack', 'Obama', 'Male', 19610804, 'UnitedHealthcare', '12', '12');
+INSERT INTO PERSON VALUES (13, 3334567655, 234567890, 'Caucasian', 'Jennifer', 'Aniston', 'Female', 19690211, 'Cigna', '13', '13');
+INSERT INTO PERSON VALUES (14, 4445678766, 345678901, 'Native American', 'Sacagawea', 'Lewis', 'Female', 17881115, 'Kaiser Permanente', '14', '14');
+INSERT INTO PERSON VALUES (15, 5556789877, 456789012, 'Pacific Islander', 'Dwayne', 'Johnson', 'Male', 19720502, 'Humana', '15', '15');
+INSERT INTO PERSON VALUES (16, 6667890988, 567890123, 'Middle Eastern', 'Mindy', 'Kaling', 'Female', 19790624, 'Blue Cross Blue Shield', '16', '16');
+INSERT INTO PERSON VALUES (17, 7778901099, 678901234, 'Mixed Race', 'Zendaya', 'Coleman', 'Female', 19960901, 'Aetna', '17', '17');
+INSERT INTO PERSON VALUES (18, 8889012211, 789012345, 'Latino', 'Gael', 'Garcia Bernal', 'Male', 19781130, 'Molina Healthcare', '18', '18');
+INSERT INTO PERSON VALUES (19, 9990123322, 890123456, 'Asian', 'Steven', 'Yeun', 'Male', 19831221, 'State Farm', '19', '19');
+INSERT INTO PERSON VALUES (20, 1112233444, 901234567, 'Caucasian', 'Rachel', 'Green', 'Female', 19690525, 'AARP', '20', '20');
+
+
+
+
+
+
+/************************ Insertions for ADDRESS ******************************/
+INSERT INTO ADDRESS VALUES (01, '123 Main St', 'Los Angeles', 90001, 'Home');
+INSERT INTO ADDRESS VALUES (02, '456 Elm St', 'New York', 10001, 'Work');
+INSERT INTO ADDRESS VALUES (03, '789 Oak St', 'Chicago', 60601, 'Home');
+INSERT INTO ADDRESS VALUES (04, '234 Maple St', 'San Francisco', 94101, 'Work');
+INSERT INTO ADDRESS VALUES (05, '567 Pine St', 'Seattle', 98101, 'Home');
+INSERT INTO ADDRESS VALUES (06, '890 Cedar St', 'Miami', 33101, 'Work');
+INSERT INTO ADDRESS VALUES (07, '111 Cherry St', 'Houston', 77001, 'Home');
+INSERT INTO ADDRESS VALUES (08, '222 Birch St', 'Dallas', 75201, 'Work');
+INSERT INTO ADDRESS VALUES (09, '333 Spruce St', 'Boston', 02101, 'Home');
+INSERT INTO ADDRESS VALUES (10, '444 Cedar St', 'Denver', 80201, 'Work');
+INSERT INTO ADDRESS VALUES (11, '555 Walnut St', 'Philadelphia', 19101, 'Home');
+INSERT INTO ADDRESS VALUES (12, '666 Oak St', 'Atlanta', 30301, 'Work');
+INSERT INTO ADDRESS VALUES (13, '777 Pine St', 'Phoenix', 85001, 'Home');
+INSERT INTO ADDRESS VALUES (14, '888 Maple St', 'San Diego', 92101, 'Work');
+INSERT INTO ADDRESS VALUES (15, '999 Cherry St', 'Las Vegas', 89101, 'Home');
+INSERT INTO ADDRESS VALUES (16, '1010 Birch St', 'Portland', 97201, 'Work');
+INSERT INTO ADDRESS VALUES (17, '1111 Spruce St', 'Austin', 78701, 'Home');
+INSERT INTO ADDRESS VALUES (18, '1212 Cedar St', 'Nashville', 37201, 'Work');
+INSERT INTO ADDRESS VALUES (19, '1313 Walnut St', 'New Orleans', 70112, 'Home');
+INSERT INTO ADDRESS VALUES (20, '1414 Oak St', 'Kansas City', 64101, 'Work');
+
+
+
+
+/************************ Insertions for COUNTY ******************************/
+INSERT INTO COUNTY VALUES (90001, 'CA');
+INSERT INTO COUNTY VALUES (10001, 'NY');
+INSERT INTO COUNTY VALUES (60601, 'IL');
+INSERT INTO COUNTY VALUES (94101, 'CA');
+INSERT INTO COUNTY VALUES (98101, 'WA');
+INSERT INTO COUNTY VALUES (33101, 'FL');
+INSERT INTO COUNTY VALUES (77001, 'TX');
+INSERT INTO COUNTY VALUES (75201, 'TX');
+INSERT INTO COUNTY VALUES (02101, 'MA');
+INSERT INTO COUNTY VALUES (80201, 'CO');
+INSERT INTO COUNTY VALUES (19101, 'PA');
+INSERT INTO COUNTY VALUES (30301, 'GA');
+INSERT INTO COUNTY VALUES (85001, 'AZ');
+INSERT INTO COUNTY VALUES (92101, 'CA');
+INSERT INTO COUNTY VALUES (89101, 'NV');
+INSERT INTO COUNTY VALUES (97201, 'OR');
+INSERT INTO COUNTY VALUES (78701, 'TX');
+INSERT INTO COUNTY VALUES (37201, 'TN');
+INSERT INTO COUNTY VALUES (70112, 'LA');
+INSERT INTO COUNTY VALUES (64101, 'MO');
+
+
+
+
+/************************ Insertions for INSURANCE COMPANY ******************************/
+INSERT INTO INSURANCE_COMPANY VALUES ('State Farm');
+INSERT INTO INSURANCE_COMPANY VALUES ('Allstate');
+INSERT INTO INSURANCE_COMPANY VALUES ('Geico');
+INSERT INTO INSURANCE_COMPANY VALUES ('Nationwide');
+INSERT INTO INSURANCE_COMPANY VALUES ('Progressive');
+INSERT INTO INSURANCE_COMPANY VALUES ('Farmers');
+INSERT INTO INSURANCE_COMPANY VALUES ('USAA');
+INSERT INTO INSURANCE_COMPANY VALUES ('Liberty Mutual');
+INSERT INTO INSURANCE_COMPANY VALUES ('Travelers');
+INSERT INTO INSURANCE_COMPANY VALUES ('American Family');
+INSERT INTO INSURANCE_COMPANY VALUES ('AAA');
+INSERT INTO INSURANCE_COMPANY VALUES ('Amica');
+INSERT INTO INSURANCE_COMPANY VALUES ('Chubb');
+INSERT INTO INSURANCE_COMPANY VALUES ('Erie');
+INSERT INTO INSURANCE_COMPANY VALUES ('Hartford');
+INSERT INTO INSURANCE_COMPANY VALUES ('Mercury');
+INSERT INTO INSURANCE_COMPANY VALUES ('MetLife');
+INSERT INTO INSURANCE_COMPANY VALUES ('Nationside');
+INSERT INTO INSURANCE_COMPANY VALUES ('Safeco');
+INSERT INTO INSURANCE_COMPANY VALUES ('State Auto');
+
+
+
+
+/************************ Insertions for INSURANCE POLICY ******************************/
+INSERT INTO INSURANCE_POLICY VALUES (01, 'Dental PPO', 'Delta Dental');
+INSERT INTO INSURANCE_POLICY VALUES (02, 'Dental HMO', 'Cigna');
+INSERT INTO INSURANCE_POLICY VALUES (03, 'Dental Indemnity', 'MetLife');
+INSERT INTO INSURANCE_POLICY VALUES (04, 'Dental EPO', 'Aetna');
+INSERT INTO INSURANCE_POLICY VALUES (05, 'Dental Savings', 'Humana');
+INSERT INTO INSURANCE_POLICY VALUES (06, 'Dental Discount', 'Guardian');
+INSERT INTO INSURANCE_POLICY VALUES (07, 'Dental POS', 'United Healthcare');
+INSERT INTO INSURANCE_POLICY VALUES (08, 'Dental Platinum', 'Anthem');
+INSERT INTO INSURANCE_POLICY VALUES (09, 'Dental Gold', 'Blue Cross Blue Shield');
+INSERT INTO INSURANCE_POLICY VALUES (10, 'Dental Silver', 'Assurant');
+INSERT INTO INSURANCE_POLICY VALUES (11, 'Vision PPO', 'VSP');
+INSERT INTO INSURANCE_POLICY VALUES (12, 'Vision HMO', 'EyeMed');
+INSERT INTO INSURANCE_POLICY VALUES (13, 'Vision Indemnity', 'Davis Vision');
+INSERT INTO INSURANCE_POLICY VALUES (14, 'Vision EPO', 'Superior Vision');
+INSERT INTO INSURANCE_POLICY VALUES (15, 'Vision Savings', 'Spectera');
+INSERT INTO INSURANCE_POLICY VALUES (16, 'Vision Discount', 'Avesis');
+INSERT INTO INSURANCE_POLICY VALUES (17, 'Vision POS', 'Humana');
+INSERT INTO INSURANCE_POLICY VALUES (18, 'Vision Platinum', 'Anthem');
+INSERT INTO INSURANCE_POLICY VALUES (19, 'Vision Gold', 'Cigna');
+INSERT INTO INSURANCE_POLICY VALUES (20, 'Vision Silver', 'MetLife');
+
+
+
+
+/************************ Insertions for EMERGENCY CONTACT ******************************/
+insert into EMERGENCY_CONTACT
+VALUES
+(1, 'Jane', 'Johnson', 4401239876),
+(2, 'Nate', 'Erickson', 4409871234),
+(3, 'Chris', 'Jones', 4404567890),
+(4, 'David', 'Stevens', 4400984567),
+(5, 'Christopher', 'Columbus', 2161239876),
+(6, 'Eren', 'Yaeger', 2169871234),
+(7, 'Bruce', 'Wayne', 2164567890),
+(8, 'Barack', 'Obama', 2160984567),
+(9, 'Jose', 'Ramirez', 3061239876),
+(10, 'Fransico', 'Lindor', 3069871234),
+(11, 'Aaron', 'Judge', 3064567890),
+(12, 'Ben', 'Roths', 3060984567),
+(13, 'Craig', 'Peel', 1234567890),
+(14, 'Jack', 'Sawyer', 1230987654),
+(15, 'CJ', 'Stroud', 1234560987),
+(16, 'Marvin', 'Harrison', 1230984567),
+(17, 'Sarah', 'Lee', 4405551234),
+(18, 'David', 'Chang', 4405554321),
+(19, 'Maria', 'Gonzalez', 2165555678),
+(20, 'Mohammed', 'Ali', 2165558765);
+
+
+
+
+/************************ Insertions for PAYMENT ******************************/
+insert into PAYMENT
+VALUES
+(1, 02032023,1000, 1, 1),
+(2, 03032023,1200, 2, 2),
+(3, 11032023, 1500, 3, 3),
+(4, 02032023, 500, 4, 4),
+(5, 12032023, 750, 5, 5),
+(6, 09032023, 800, 6, 6),
+(7, 08032023, 100, 7, 7),
+(8, 07032023, 1050, 8, 8),
+(9, 06032023, 300, 9, 9),
+(10, 10032023, 450, 4, 4),
+(11, 05032023, 200, 2, 2),
+(12, 04032023, 400, 7, 7),
+(13, 01032023, 600, 1, 1),
+(14, 07232023, 75, 4, 4),
+(15, 08232023, 25, 4, 4),
+(16, 09132023, 275, 4, 4),
+(17, 11032023, 600, 4, 4),
+(18, 12032023, 900, 5, 5),
+(19, 03032023, 400, 6, 6),
+(20, 04032023, 1000, 7, 7);
+
+
+
+
+/************************ Insertions for INVOICE ******************************/
+insert into INVOICE
+VALUES
+(1, '2022-02-03', 5000, 1, 1),
+(2, '2022-03-03', 5200, 2, 2),
+(3, '2022-11-03', 4500, 3, 3),
+(4, '2022-02-03', 6500, 4, 4),
+(5, '2022-12-03', 7750, 5, 5),
+(6, '2022-09-03', 1800, 6, 6),
+(7, '2022-08-03', 2100, 7, 7),
+(8, '2022-07-03', 2050, 8, 8),
+(9, '2022-06-03', 1300, 9, 9),
+(10, '2022-10-03', 6450, 10,10),
+(11, '2022-05-03', 7200,11,11),
+(12, '2022-04-03', 8400, 12,12),
+(13, '2022-01-03', 4600,13,13),
+(14, '2022-07-23', 2375,14,14),
+(15, '2022-08-23', 2625,15,15),
+(16, '2022-09-13', 3375,16,16),
+(17, '2022-06-13', 3200, 17, 17),
+(18, '2022-08-07', 4800, 18, 18),
+(19, '2022-11-19', 2700, 19, 19),
+(20, '2022-12-24', 6200, 20, 20);
+
+
+
+
+/************************ Insertions for PROCEDURE ******************************/
+INSERT INTO PROCEDURE (ProcedureID, Cost, Pro_Date, Procedure_Name, PolicyID)
+VALUES
+('01', '100', '04-06-2023', 'Teeth cleaning', '001'),
+('02', '200', '04-07-2023', 'Fillings', '002'),
+('03', '300', '04-08-2023', 'Root canal', '003'),
+('04', '400', '04-09-2023', 'Tooth extraction', '004'),
+('05', '500', '04-10-2023', 'Dental implant', '005'),
+('06', '600', '04-11-2023', 'Orthodontic treatment', '006'),
+('07', '700', '04-12-2023', 'Gum surgery', '007'),
+('08', '800', '04-13-2023', 'Oral cancer screening', '008'),
+('09', '900', '04-14-2023', 'Dental X-rays', '009'),
+('10', '1000', '04-15-2023', 'Dental bonding', '010'),
+('11', '1000', '2022-05-03', 'Dental bonding', '11'),
+('12', '1100', '2023-04-19', 'Teeth whitening', '012'),
+('13', '1200', '2023-04-20', 'Crown placement', '013'),
+('14', '1300', '2023-04-21', 'Bite adjustment', '014'),
+('15', '1400', '2023-04-22', 'Denture fitting', '015'),
+('16', '1500', '2023-04-23', 'Mouthguard creation', '016'),
+('17', '1600', '2023-04-24', 'Wisdom teeth removal', '017'),
+('18', '1700', '2023-04-25', 'Periodontal treatment', '018'),
+('19', '1800', '2023-04-26', 'Jaw realignment', '019'),
+('20', '1900', '2023-04-27', 'Enamel shaping', '020');
+
+
+/************************ Insertions for COVERAGE ******************************/
+/*Nate is doing the next 9 from here!*/
+insert into COVERAGE
+VALUES
+(1 ,'T', 5),
+(2 ,'F', 0),
+(3 ,'T', 10),
+(4 ,'T',20),
+(5 ,'T',15),
+(6 ,'F', 0),
+(7 ,'T', 5),
+(8 ,'T', 2),
+(9 ,'T', 3),
+(10,'T', 1),
+(11, 'F', 0),
+(12, 'F', 0),
+(13, 'T', 2),
+(14, 'T', 5),
+(15, 'F', 0),
+(16, 'T', 7),
+(17, 'T', 8),
+(18, 'T', 10),
+(19, 'F', 0),
+(20, 'T', 3);
+
+
+/************************ Insertions for ALLERGIES ******************************/
+insert into ALLERGIES
+VALUES
+(1, 'Peanut'),
+(2, 'Tree'),
+(3, 'Pollen'),
+(4, 'Mold'),
+(5, 'Dust'),
+(6, 'Latex'),
+(7, 'Bee Stings'),
+(8, 'Fish'),
+(9, 'Gluten'),
+(10, 'Perfume'),
+(11, 'Soy'),
+(12, 'Cat'),
+(13, 'Dog'),
+(14, 'Nickel'),
+(15, 'Gold'),
+(16, 'Egg'),
+(17, 'Oats'),
+(18, 'Watermelon'),
+(19, 'Bananas'),
+(20, 'Berry');
+
+
+/************************ Insertions for MEDICATIONS ******************************/
+INSERT INTO MEDICATIONS (Med_Num, Prescribed_Amount, Med_Name)
+VALUES
+(01, 50, 'Ibuprofen'),
+(02, 10, 'Lisinopril'),
+(03, 100, 'Amoxicillin'),
+(04, 25, 'Simvastatin'),
+(05, 20, 'Loratadine'),
+(06, 30, 'Fluticasone'),
+(07, 15, 'Metformin'),
+(08, 40, 'Atorvastatin'),
+(09, 5, 'Aspirin'),
+(10, 20, 'Sertraline'),
+(11, 10, 'Nitrous Oxide'),
+(12, 3, 'Corticosteriod'),
+(13, 12, 'Motrin'),
+(14, 5, 'Chlorhexidine'),
+(15, 20, 'Doxycycline'),
+(16, 15, 'Flouride'),
+(17, 20, 'Pilocarpine'),
+(18, 25, 'Tetracycline'),
+(19, 3, 'Anbesol'),
+(20, 2, 'Orajel');
+
+
+/************************ Insertions for SIGNED_HIPPA ******************************/
+INSERT INTO SIGNED_HIPPA (DocID, Signed_Date, PersonID)
+VALUES
+(01, '01012000', 01),
+(02, '02022001', 02),
+(03, '03032002', 03),
+(04, '04042003', 04),
+(05, '05052004', 05),
+(06, '06062005', 06),
+(07, '07072006', 07),
+(08, '08082007', 08),
+(09, '09092008', 09),
+(10, '10102009', 10),
+(11, '11112010', 11),
+(12, '12122010', 12),
+(13, '02042010', 13),
+(14, '03052010', 14),
+(15, '05092010', 15),
+(16, '12132010', 16),
+(17, '09112010', 17),
+(18, '11072010', 18),
+(19, '07112010', 19),
+(20, '01112010', 20);
+
+
+/************************ Insertions for LAST_XRAY ******************************/
+INSERT INTO LAST_XRAY (XrayID, Xray_Date, PersonID) VALUES
+  (01, 12082021, 01),
+  (02, 10272020, 02),
+  (03, 06252022, 03),
+  (04, 05022021, 04),
+  (05, 11062020, 05),
+  (06, 08142022, 06),
+  (07, 01252023, 07),
+  (08, 07072021, 08),
+  (09, 04022023, 09),
+  (10, 09252020, 10),
+  (11, 11112020, 11),
+  (12, 12122020, 12),
+  (13, 02042020, 13),
+  (14, 03052020, 14),
+  (15, 05092020, 15),
+  (16, 12132020, 16),
+  (17, 09112020, 17),
+  (18, 11072020, 18),
+  (19, 07112020, 19),
+  (20, 01272020, 20);
+
+
+/************************ Insertions for APPOINTMENT ******************************/
+INSERT INTO APPOINTMENT (AppointmentID, App_Date, PersonID)
+VALUES 
+    (1, '04-06-2023', 1),
+    (2, '04-07-2023', 2),
+    (3, '04-08-2023', 3),
+    (4, '04-09-2023', 4),
+    (5, '04-10-2023', 5),
+    (6, '04-11-2023', 6),
+    (7, '04-12-2023', 7),
+    (8, '04-13-2023', 8),
+    (9, '04-14-2023', 9),
+    (10, '04-015-2023', 10),
+    (11, '2022-05-03', 8),
+    (12, '2023-04-19', 5),
+    (13, '2023-04-20', 2),
+    (14, '2023-04-21', 3),
+    (15, '2023-04-22', 5),
+    (16, '2023-04-23', 10),
+    (17, '2023-04-24', 5),
+    (18, '2023-04-25', 9),
+    (19, '2023-04-26', 3),
+    (20, '2023-04-27', 10);
+
+
+
+
+
+
+/************************ Insertions for LICENSURE ******************************/
+INSERT INTO LICENSURE (LicensureID, Is_Active, PersonID) VALUES
+    (1, 'T', 3),
+    (2, 'F', 5),
+    (3, 'T', 2),
+    (4, 'F', 1),
+    (5, 'T', 6),
+    (6, 'F', 7),
+    (7, 'T', 9),
+    (8, 'F', 8),
+    (9, 'T', 10),
+    (10, 'F', 20),
+    (11, 'F', 14),
+    (12, 'T', 13),
+    (13, 'F', 19),
+    (14, 'T', 16),
+    (15, 'F', 11),
+    (16, 'F', 12),
+    (17, 'T', 18),
+    (18, 'T', 10),
+    (19, 'T', 17),
+    (20, 'F', 15);
+
+
+/************************ Insertions for PATIENT_MEDICATIONS ******************************/
+INSERT INTO PATIENT_MEDICATIONS (Med_Num, PersonID, Prescribed_Date) 
+VALUES 
+(01, 03, 03142022),
+(02, 05, 06122020),
+(03, 02, 07112021),
+(04, 06, 08122021),
+(05, 01, 12112022),
+(06, 09, 11092021),
+(07, 04, 05162021),
+(08, 07, 06232021),
+(09, 08, 02252022),
+(10, 03, 06152020),
+(11, 10, 09242020),
+(12, 08, 05232022),
+(13, 04, 03132023),
+(14, 12, 02222021),
+(15, 03, 01302021),
+(16, 05, 04122021),
+(17, 15, 06122020),
+(18, 20, 07132020),
+(19, 11, 08112020),
+(20, 03, 09162021);
+
+
+/************************ Insertions for PATIENT_ALLERGIES ******************************/
+INSERT INTO PATIENT_ALLERGIES (AllergyID, PersonID, Diagnosed_Date)
+VALUES 
+  (01, 03, 11162022),
+  (02, 07, 12152020),
+  (03, 01, 08132021),
+  (04, 09, 05232021),
+  (05, 04, 06242022),
+  (06, 02, 07152020),
+  (07, 06, 08122020),
+  (08, 10, 04112020),
+  (09, 08, 09112021),
+  (10, 05, 04122020),
+  (11, 15, 03132023),
+  (12, 12, 01152023),
+  (13, 17, 02172021),
+  (14, 20, 03182021),
+  (15, 08, 02192023),
+  (16, 11, 02202021),
+  (17, 09, 03122021),
+  (18, 05, 04132021),
+  (19, 17, 04142022),
+  (20, 02, 05152019);
+
+
+
+
+
+
+/************************ Insertions for PERSON_ADDRESS ******************************/
+INSERT INTO PERSON_ADDRESS (AddID, PersonID, AddrStatus, StartDate, EndDate)
+VALUES
+        ('01', '01', 'Current', '07192020', NULL),
+        ('02', '02', 'Current', '01122021', NULL),
+        ('03', '03', 'Previous', '05012018', '08222019'),
+        ('04', '04', 'Current', '10152022', NULL),
+        ('05', '05', 'Previous', '03232019', '10202020'),
+        ('06', '06', 'Current', '01012020', NULL),
+        ('07', '07', 'Previous', '06152017', '04012019'),
+        ('08', '08', 'Current', '12152019', NULL),
+        ('09', '09', 'Previous', '02012018', '12012018'),
+        ('10', '10', 'Current', '04202021', NULL),
+            ('11', '11', 'Current', '04192020', NULL),
+        ('12', '12', 'Current', '05122021', NULL),
+        ('13', '13', 'Previous', '06012018', '08222019'),
+        ('14', '14', 'Current', '10252022', NULL),
+        ('15', '15', 'Previous', '02252019', '10202020'),
+        ('16', '16', 'Current', '03002020', NULL),
+        ('17', '17', 'Previous', '05152017', '04012019'),
+        ('18', '18', 'Current', '10052019', NULL),
+        ('19', '19', 'Previous', '03012018', '12012018'),
+        ('20', '20', 'Current', '04262021', NULL);
+
+
+/************************ Insertions for PROCEDURE_COST ******************************/
+INSERT INTO PROCEDURE_COST VALUES
+('1','1','4000');
+INSERT INTO PROCEDURE_COST VALUES
+('1','3','5000');
+INSERT INTO PROCEDURE_COST VALUES
+('1','6','4500');
+INSERT INTO PROCEDURE_COST VALUES
+('2','5','6500');
+INSERT INTO PROCEDURE_COST VALUES
+('3','4','7000');
+INSERT INTO PROCEDURE_COST VALUES
+('4','3','4200');
+INSERT INTO PROCEDURE_COST VALUES
+('5','3','8800');
+INSERT INTO PROCEDURE_COST VALUES
+('6','1','7900');
+INSERT INTO PROCEDURE_COST VALUES
+('7','1','6700');
+INSERT INTO PROCEDURE_COST VALUES
+('8','1','9900');
+INSERT INTO PROCEDURE_COST VALUES
+('11','11','4523');
+INSERT INTO PROCEDURE_COST VALUES
+('11','3','4312');
+INSERT INTO PROCEDURE_COST VALUES
+('11','4','4923');
+INSERT INTO PROCEDURE_COST VALUES
+('12','3','2973');
+INSERT INTO PROCEDURE_COST VALUES
+('13','18','8123');
+INSERT INTO PROCEDURE_COST VALUES
+('14','20','1234');
+INSERT INTO PROCEDURE_COST VALUES
+('15','19','8763');
+INSERT INTO PROCEDURE_COST VALUES
+('16','18','1563');
+INSERT INTO PROCEDURE_COST VALUES
+('17','17','9392');
+INSERT INTO PROCEDURE_COST VALUES
+('18','15','9669');
+INSERT INTO PROCEDURE_COST VALUES
+('19','13','5234');
+
+
+/************************ Insertions for LICENSE_CERTIFICATION ******************************/
+INSERT INTO LICENSE_CERTIFICATION VALUES
+('CDCA','1');
+INSERT INTO LICENSE_CERTIFICATION VALUES
+('CITA','1');
+INSERT INTO LICENSE_CERTIFICATION VALUES
+('CRDTS','1');
+INSERT INTO LICENSE_CERTIFICATION VALUES
+('SRTA','1');
+INSERT INTO LICENSE_CERTIFICATION VALUES
+('WREB','1');
+INSERT INTO LICENSE_CERTIFICATION VALUES
+('CDCA','2');
+INSERT INTO LICENSE_CERTIFICATION VALUES
+('CITA','2');
+INSERT INTO LICENSE_CERTIFICATION VALUES
+('CRDTS','2');
+INSERT INTO LICENSE_CERTIFICATION VALUES
+('SRTA','2');
+INSERT INTO LICENSE_CERTIFICATION VALUES
+('WREB','2');
+INSERT INTO LICENSE_CERTIFICATION VALUES
+('CDCA','3');
+INSERT INTO LICENSE_CERTIFICATION VALUES
+('CITA','4');
+INSERT INTO LICENSE_CERTIFICATION VALUES
+('CRDTS','4');
+INSERT INTO LICENSE_CERTIFICATION VALUES
+('SRTA','4');
+INSERT INTO LICENSE_CERTIFICATION VALUES
+('WREB','4');
+INSERT INTO LICENSE_CERTIFICATION VALUES
+('CDCA','5');
+INSERT INTO LICENSE_CERTIFICATION VALUES
+('CITA','3');
+INSERT INTO LICENSE_CERTIFICATION VALUES
+('CRDTS','3');
+INSERT INTO LICENSE_CERTIFICATION VALUES
+('SRTA','3');
+INSERT INTO LICENSE_CERTIFICATION VALUES
+('WREB','3');
+
+
+
+
+
+
+/************************ Insertions for PATIENT ******************************/
+INSERT INTO PATIENT (PersonID, Patient_Num)
+VALUES 
+  (1, 2),
+  (2, 3),
+  (3, 5),
+  (4, 6),
+  (5, 7),
+  (6, 9),
+  (7, 10),
+  (8, 4),
+  (9, 1),
+  (10, 8),
+  (11, 11),
+  (12, 12),
+  (13, 13),
+  (14, 14),
+  (15, 15),
+  (16, 16),
+  (17, 17),
+  (18, 18),
+  (19, 19),
+  (20, 20);
+
+
+/************************ Insertions for EMPLOYEE ******************************/
+INSERT INTO EMPLOYEE VALUES
+('1', '150000', 'Medical');
+INSERT INTO EMPLOYEE VALUES
+('2', '50000', 'NonMedical');
+INSERT INTO EMPLOYEE VALUES
+('3', '30000', 'NonMedical');
+INSERT INTO EMPLOYEE VALUES
+('4', '170000', 'Medical');
+INSERT INTO EMPLOYEE VALUES
+('5', '160000', 'Medical');
+INSERT INTO EMPLOYEE VALUES
+('6', '200000', 'Medical');
+INSERT INTO EMPLOYEE VALUES
+('7', '40000', 'NonMedical');
+INSERT INTO EMPLOYEE VALUES
+('8', '170000', 'Medical');
+INSERT INTO EMPLOYEE VALUES
+('9', '40000', 'NonMedical');
+INSERT INTO EMPLOYEE VALUES
+('10', '50000', 'NonMedical');
+INSERT INTO EMPLOYEE VALUES
+('11', '150000', 'Medical');
+INSERT INTO EMPLOYEE VALUES
+('12', '50000', 'NonMedical');
+INSERT INTO EMPLOYEE VALUES
+('13', '30000', 'NonMedical');
+INSERT INTO EMPLOYEE VALUES
+('14', '170000', 'Medical');
+INSERT INTO EMPLOYEE VALUES
+('15', '160000', 'Medical');
+INSERT INTO EMPLOYEE VALUES
+('16', '200000', 'Medical');
+INSERT INTO EMPLOYEE VALUES
+('17', '40000', 'NonMedical');
+INSERT INTO EMPLOYEE VALUES
+('18', '170000', 'Medical');
+INSERT INTO EMPLOYEE VALUES
+('19', '40000', 'NonMedical');
+INSERT INTO EMPLOYEE VALUES
+('20', '50000', 'NonMedical');
+
+
+/************************ Insertions for MEDICAL ******************************/
+INSERT INTO MEDICAL VALUES
+('1','F','F','F','T');
+INSERT INTO MEDICAL VALUES
+('4','F','T','F','F');
+INSERT INTO MEDICAL VALUES
+('5','F','F','T','F');
+INSERT INTO MEDICAL VALUES
+('6','T','F','F','F');
+INSERT INTO MEDICAL VALUES
+('8','F','F','F','T');
+INSERT INTO MEDICAL VALUES
+('11','F','F','T','T');
+INSERT INTO MEDICAL VALUES
+('14','F','F','F','T');
+INSERT INTO MEDICAL VALUES
+('15','F','T','F','F');
+INSERT INTO MEDICAL VALUES
+('16','F','F','T','F');
+INSERT INTO MEDICAL VALUES
+('18','T','F','F','F');
+
+
+
+
+/************************ Insertions for NONMEDICAL******************************/
+INSERT INTO NONMEDICAL VALUES
+('2', 'T','F','F');
+INSERT INTO NONMEDICAL VALUES
+('3', 'T','F','F');
+INSERT INTO NONMEDICAL VALUES
+('7', 'F','T','F');
+INSERT INTO NONMEDICAL VALUES
+('9', 'F','F','T');
+INSERT INTO NONMEDICAL VALUES
+('10', 'T','F','F');
+INSERT INTO NONMEDICAL VALUES
+('12', 'T','F','F');
+INSERT INTO NONMEDICAL VALUES
+('13', 'T','F','F');
+INSERT INTO NONMEDICAL VALUES
+('17', 'F','T','F');
+INSERT INTO NONMEDICAL VALUES
+('19', 'F','F','T');
+INSERT INTO NONMEDICAL VALUES
+('20', 'T','F','F');
+
+
+/************************ Insertions for CASH ******************************/
+INSERT INTO CASH VALUES
+('1','Twenty');
+INSERT INTO CASH VALUES
+('2','One');
+INSERT INTO CASH VALUES
+('3','Five');
+INSERT INTO CASH VALUES
+('4','Fifty');
+INSERT INTO CASH VALUES
+('5','Twenty');
+INSERT INTO CASH VALUES
+('6','One');
+INSERT INTO CASH VALUES
+('7','Twenty');
+INSERT INTO CASH VALUES
+('8','One-Hundred');
+INSERT INTO CASH VALUES
+('9','Fifty');
+INSERT INTO CASH VALUES
+('10','Twenty');
+INSERT INTO CASH VALUES
+('11','Twenty');
+INSERT INTO CASH VALUES
+('12','One-Hundred');
+INSERT INTO CASH VALUES
+('13','Twenty');
+INSERT INTO CASH VALUES
+('14','Fifty');
+INSERT INTO CASH VALUES
+('15','Twenty');
+INSERT INTO CASH VALUES
+('16','One-Hundred');
+INSERT INTO CASH VALUES
+('17','Twenty');
+INSERT INTO CASH VALUES
+('18','One-Hundred');
+INSERT INTO CASH VALUES
+('19','Fifty');
+INSERT INTO CASH VALUES
+('20','One');
+
+
+
+
+/************************ Insertions for CREDIT ******************************/
+INSERT INTO CREDIT VALUES
+('1','1233567781141444','0324','311');
+INSERT INTO CREDIT VALUES
+('2','8432456912431236','0823','324');
+INSERT INTO CREDIT VALUES
+('3','1125678923458814','0224','655');
+INSERT INTO CREDIT VALUES
+('4','1938577389093256','0623','645');
+INSERT INTO CREDIT VALUES
+('5','8112119857892353','0724','536');
+INSERT INTO CREDIT VALUES
+('6','1734892847239132','0924','567');
+INSERT INTO CREDIT VALUES
+('7','4925723852035845','1023','876');
+INSERT INTO CREDIT VALUES
+('8','2437143151243455','0224','977');
+INSERT INTO CREDIT VALUES
+('9','1432515464544642','0424','667');
+INSERT INTO CREDIT VALUES
+('10','4574334564754323','0524','244');
+INSERT INTO CREDIT VALUES
+('11','1233556681141444','0324','311');
+INSERT INTO CREDIT VALUES
+('12','8432445512431236','0823','324');
+INSERT INTO CREDIT VALUES
+('13','1125644423458814','0224','655');
+INSERT INTO CREDIT VALUES
+('14','1938575559093256','0623','645');
+INSERT INTO CREDIT VALUES
+('15','8112116667892353','0724','536');
+INSERT INTO CREDIT VALUES
+('16','1734894447239132','0924','567');
+INSERT INTO CREDIT VALUES
+('17','4925725552035843','1023','876');
+INSERT INTO CREDIT VALUES
+('18','2437146661243225','0224','977');
+INSERT INTO CREDIT VALUES
+('19','1432577762534642','0424','667');
+INSERT INTO CREDIT VALUES
+('20','4574388864754323','0524','244');
+
+
+
+
+/************************ Insertions for CHECK1******************************/
+INSERT INTO CHECK1 VALUES
+('1','231432123','4324564341');
+INSERT INTO CHECK1 VALUES
+('2','543256556','4763653636');
+INSERT INTO CHECK1 VALUES
+('3','445343645','7847648757');
+INSERT INTO CHECK1 VALUES
+('4','432435646','7647647658');
+INSERT INTO CHECK1 VALUES
+('5','765875435','3564245657');
+INSERT INTO CHECK1 VALUES
+('6','136572256','3654375678');
+INSERT INTO CHECK1 VALUES
+('7','586575756','8764643757');
+INSERT INTO CHECK1 VALUES
+('8','853655245','6474875485');
+INSERT INTO CHECK1 VALUES
+('9','765774836','2545654266');
+INSERT INTO CHECK1 VALUES
+('10','685345452','5265654325');
+INSERT INTO CHECK1 VALUES
+('11','251354456','5315431436');
+INSERT INTO CHECK1 VALUES
+('12','543256546','4763653654');
+INSERT INTO CHECK1 VALUES
+('13','445343532','7847648655');
+INSERT INTO CHECK1 VALUES
+('14','432435432','7647647455');
+INSERT INTO CHECK1 VALUES
+('15','765873455','3564245634');
+INSERT INTO CHECK1 VALUES
+('16','136544256','3654375665');
+INSERT INTO CHECK1 VALUES
+('17','586466756','8764643755');
+INSERT INTO CHECK1 VALUES
+('18','853344245','6474875484');
+INSERT INTO CHECK1 VALUES
+('19','765655836','2545654265');
+INSERT INTO CHECK1 VALUES
+('20','685356452','5265654665');

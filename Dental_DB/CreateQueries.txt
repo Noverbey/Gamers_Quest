@@ -1,0 +1,253 @@
+﻿/************** Person Table ***********************/
+CREATE TABLE PERSON(PersonID INTEGER NOT NULL, 
+                    Phone_Number INTEGER NOT NULL,
+                    SSN INTEGER NOT NULL,
+                    Ethnicity VARCHAR(20) NOT NULL,
+                    FirstName VARCHAR(20) NOT NULL,
+                    LastName VARCHAR(20) NOT NULL,
+                    Gender VARCHAR(8) NOT NULL,
+                    Date_of_Birth INTEGER NOT NULL,
+                    Insurance_Name VARCHAR(20) NOT NULL,
+                    ContactID INT NOT NULL,
+                    PolicyID INTEGER NOT NULL,
+                                       PRIMARY KEY(PersonID),
+                    FOREIGN key(Insurance_Name) REFERENCES INSURANCE_COMPANY(Insurance_Name),
+                    FOREIGN key(ContactID) REFERENCES EMERGENCY_CONTACT(ContactID),
+                    FOREIGN key(PolicyID) REFERENCES INSURANCE_POLICY(PolicyID)
+                    );
+
+
+/************** Address Table ***********************/
+create table ADDRESS (
+        AddressID INT NOT null,
+            Street VARCHAR(100) NOT null,
+          City VARCHAR(30) NOT null,
+          Zip INT NOT null,
+          AddrType VARCHAR(30) NOT null,
+          PRIMARY KEY(AddressID),
+        FOREIGN key(Zip) REFERENCES COUNTY(Zip));
+    
+/************** County Table ***********************/
+create table COUNTY (
+        Zip INT not null,
+        State CHAR(2) Not null,
+        PRIMARY KEY(Zip));
+
+
+/************** Person Entity Table ***********************/
+create table INSURANCE_COMPANY (
+        Insurance_Name VARCHAR(50) not null,
+        PRIMARY key(Insurance_Name));
+
+
+/************** Insurance Policy Table ***********************/
+create table INSURANCE_POLICY (
+        PolicyID int not null,
+          Policy_Type VARCHAR(40) not NULL,
+          Insurance_Name VARCHAR(50) NOT NULL,
+        PRIMARY key(PolicyID),
+          FOREIGN KEY(Insurance_Name) REFERENCES INSURANCE_COMPANY(Insurance_Name)
+        );
+
+
+/************** Emergency Contact Table ***********************/
+CREATE TABLE EMERGENCY_CONTACT(ContactID INTEGER NOT NULL, 
+                    FirstName VARCHAR(20) NOT NULL,
+                    LastName VARCHAR(20) NOT NULL,
+                    Contact_Num INTEGER NOT NULL,
+        PRIMARY KEY(ContactID));
+
+
+/************** Payment Table ***********************/
+create table PAYMENT (
+        PaymentID INT not NULL,
+        Date INT not NULL,
+        Amount INT NOT NULL,
+        InvoiceID INT not NULL,
+        PersonID int not NULL,
+        PRIMARY key(PaymentID),
+        FOREIGN key(InvoiceID) REFERENCES INVOICE(InvoiceID),
+          FOREIGN key(PersonID) REFERENCES PERSON(PersonID)
+        );
+
+
+/************** Invoice Table ***********************/
+CREATE TABLE INVOICE(
+  InvoiceID INT NOT NULL, 
+  Date datetime NOT NULL,
+  Balance INT NOT NULL,
+  AppID INT NOT NULL,
+  PersonID INT NOT NULL,
+  PRIMARY KEY(InvoiceID),
+  FOREIGN key(AppID) REFERENCES APPOINTMENT(AppointmentID),
+  FOREIGN key(PersonID) REFERENCES PERSON(PersonID)
+  );
+
+
+/************** Procedure Table ***********************/
+CREATE TABLE PROCEDURE(ProcedureID INTEGER NOT NULL, 
+                    Cost INTEGER NOT NULL,
+                    Pro_Date datetime NOT NULL,
+                Procedure_Name varchar(30) NOT NULL,
+                    PolicyID INTEGER NOT NULL,
+                    PRIMARY KEY(ProcedureID),
+                    FOREIGN key(PolicyID) REFERENCES COVERAGE(PolicyID));
+
+
+/************** Coverage Table ***********************/
+CREATE TABLE COVERAGE(PolicyID INTEGER NOT NULL, 
+                    Is_Insured CHAR(1),
+                    Percent_Covered INTEGER NOT NULL,
+                    PRIMARY KEY(PolicyID));
+
+
+/************** Allergies Table ***********************/
+create table ALLERGIES (
+        AllergyID INT not NULL,
+          Allergy_Type VARCHAR(30) NOT NULL,
+        PRIMARY key(AllergyID));
+
+
+/************** Medications Table ***********************/
+create table MEDICATIONS (
+        Med_Num INT not NULL,
+          Prescribed_Amount INT NOT NULL,
+          Med_Name VARCHAR(30) NOT NULL,
+        PRIMARY key(Med_Num));
+
+
+/************** Signed HIPPA Table ***********************/
+create table SIGNED_HIPPA (
+        DocID INT not NULL,
+          Signed_Date INT NOT NULL,
+          PersonID INT NOT NULL,
+        PRIMARY key(DocID),
+        FOREIGN key(PersonID) REFERENCES PERSON(PersonID)
+        );
+
+
+/************** Last XRay Table ***********************/
+ CREATE TABLE LAST_XRAY(
+   XrayID INT NOT NULL,
+   Xray_Date INT NOT NULL,
+   PersonID INT NOT NULL,
+   PRIMARY KEY(XrayID),
+   FOREIGN key(PersonID) REFERENCES PERSON(PersonID)
+   );
+
+
+/************** Appointment Table ***********************/
+CREATE TABLE APPOINTMENT(AppointmentID INTEGER NOT NULL, 
+                    App_Date datetime NOT NULL,
+                    PersonID INTEGER NOT NULL,
+                    PRIMARY KEY(AppointmentID),
+                    FOREIGN key(PersonID) REFERENCES PERSON(PersonID));
+
+
+
+
+/************** Licensure Table ***********************/
+create table LICENSURE (
+        LicensureID INT not NULL,
+          Is_Active CHAR(1) Not NULL,
+          PersonID INT Not NULL,
+        PRIMARY key(LicensureID),
+        FOREIGN key(PersonID) REFERENCES PERSON(PersonID));
+
+
+/************** Patient Medications Table ***********************/
+CREATE TABLE PATIENT_MEDICATIONS(Med_Num INTEGER NOT NULL, 
+                    PersonID INTEGER NOT NULL,
+                    Prescribed_Date INT Not NULL,
+                    FOREIGN key(PersonID) REFERENCES PERSON(PersonID),
+                    FOREIGN key(Med_Num) REFERENCES MEDICATIONS(Med_Num));
+
+
+/************** Patient Allergies Table ***********************/
+CREATE TABLE PATIENT_ALLERGIES(AllergyID INTEGER NOT NULL, 
+                    PersonID INTEGER NOT NULL,
+                    Diagnosed_Date INT Not NULL,
+                    FOREIGN key(PersonID) REFERENCES PERSON(PersonID),
+                    FOREIGN key(AllergyID) REFERENCES ALLERGIES(AllergyID));
+
+
+
+
+/************** Person Address Table ***********************/
+create table PERSON_ADDRESS (
+        AddID INT not NULL,
+        PersonID INT Not NULL,
+        AddrStatus VARCHAR(20) not NULL,
+        StartDate INT NOT NULL,
+        EndDate INT,
+        FOREIGN key(PersonID) REFERENCES PERSON(PersonID),
+        FOREIGN key(AddID) REFERENCES ADDRESS(AddressID));
+
+
+/************** Procedure Cost Table ***********************/
+CREATE TABLE PROCEDURE_COST(
+     InvoiceID INT NOT NULL,
+     ProcedureID INT NOT NULL,
+     Recipt_Num INT NOT NULL,
+     FOREIGN key(InvoiceID) REFERENCES INVOICE(InvoiceID),
+     FOREIGN key(ProcedureID) REFERENCES PROCEDURE(ProcedureID));
+
+
+/************** License Certification Table ***********************/
+CREATE TABLE LICENSE_CERTIFICATION(
+        Certifications VARCHAR(30) NOT NULL, 
+                    LicensureID INTEGER NOT NULL,
+                FOREIGN KEY(LicensureID) REFERENCES LICENSURE(LicensureID));
+/************** Patient Table ***********************/
+CREATE TABLE PATIENT(PersonID INTEGER NOT NULL, 
+                    Patient_Num INTEGER NOT NULL,
+                    FOREIGN key(PersonID) REFERENCES PERSON(PersonID));
+
+
+/************** Employee Table ***********************/
+create table EMPLOYEE (
+        PersonID INT not NULL,
+          Salary INT not NULL,
+          Employee_Type VARCHAR(30) not NULL,
+        FOREIGN key(PersonID) REFERENCES PERSON(PersonID));
+
+
+/************** Medical Table ***********************/
+CREATE TABLE MEDICAL(
+  PersonID INT NOT NULL,
+  Anesthesiologist CHAR(1) ,
+  Dental_Assistant CHAR(1),
+  Hygienist CHAR(1),
+  Dental_Surgeon CHAR(1) NULL,
+  FOREIGN key(PersonID) REFERENCES PERSON(PersonID));
+
+
+/************** Nonmedical Table ***********************/
+CREATE TABLE NONMEDICAL(PersonID INTEGER NOT NULL, 
+                    Receptionist CHAR(1) NOT NULL,
+                    Bookkeeper CHAR(1) NOT NULL,
+                    Office_Manager CHAR(1) NOT NULL,
+                    FOREIGN key(PersonID) REFERENCES PERSON(PersonID));
+
+
+/************** Cash Table ***********************/
+create table CASH (
+        PaymentID INT not NULL,
+          Dollar_Type VARCHAR(30) NOT NULL,
+        FOREIGN key(PaymentID) REFERENCES PAYMENT(PaymentID));
+
+
+/************** Credit Table ***********************/
+create table CREDIT (
+        PaymentID INT not NULL,
+          Card_Num INT NOT NULL,
+          Expr_Date INT NOT NULL,
+          CVV INT NOT NULL,
+        FOREIGN key(PaymentID) REFERENCES PAYMENT(PaymentID));
+
+
+/************** Check1 Table ***********************/
+CREATE TABLE CHECK1(PaymentID INTEGER NOT NULL, 
+                    Account_Num INTEGER NOT NULL,
+                    Routing_Num INTEGER NOT NULL,
+                    FOREIGN key(PaymentID) REFERENCES PAYMENT(PaymentID));

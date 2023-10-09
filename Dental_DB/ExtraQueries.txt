@@ -1,0 +1,16 @@
+﻿/**************Query E1**************/
+SELECT PERSON.firstname, PERSON.lastname
+FROM PERSON, APPOINTMENT
+WHERE PERSON.PersonID = APPOINTMENT.PersonID
+        AND APPOINTMENT.App_Date >= 08152023;
+
+
+ /**************Query E2**************/
+SELECT COUNT(EMPLOYEE.Employee_Type), avg(EMPLOYEE.Salary)
+FROM EMPLOYEE
+WHERE EMPLOYEE.employee_type = 'NonMedical';
+
+
+/**************Query E3**************/
+SELECT COUNT(INVOICE.InvoiceID), SUM(INVOICE.Balance)
+FROM INVOICE;
