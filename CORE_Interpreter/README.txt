@@ -1,17 +1,1 @@
-Name: Nathanie Overbey
-
-I had no discussions with anybody about this project
-
-This file contains all the files from project 3 with the addition of:
-FuncDecl.java this file contains the parse, print, semantic and execute functions for the funcDecl nonterminal of the grammar
-Formulas.java this file contains parse, print, semantic, execute, and executeOut functions of the formals nonterminal of the grammar
-FuncCall.java this file contains parse print, semantic, and execute functions for the func-call nonterminal in the grammar
-
-No special features or comments
-
-The way the call stack is implemented is that we enter a completely new scope so the program can only see the formal params and global variables
-
-I first tested the interpreter by writing parts of the parse and print functions for each program then checking to see
-if everything was being correctly stored. After I was sure that the parse tree was being created correctly I devloped
-the execute functions and tested them on the correct .code files. I finally, created and tested the semantic functions
-and used the error .code files to check them.
+Once files are loaded into user's machine make sure to change directories into CORE_Interpreter folder to begin compilying and running files. Once in this directory, compile all files using the command "javac Main.java" this should compile all necessary files for project to run. To run the porgram in the command line enter "java Main <code file> <data file>" for instance one type of command could be "java Main Correct/0.code Correct/0.data". To run all test in the given "Correct" folder run the command "sh tester.sh" this will auto test the program against the first 10 test to ensure correctness than the next 6 tests will determine if the program is picking up execution errors correctly.
